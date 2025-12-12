@@ -1,0 +1,91 @@
+WIADOMOŚĆ DO ONET SUPPORT
+=========================
+
+DO: poczta@grupaonet.pl
+TEMAT: Nie mogę zalogować się przez IMAP mimo włączonych ustawień
+
+---
+
+Dzień dobry,
+
+Mam problem z dostępem IMAP do mojego konta pocztowego.
+
+SZCZEGÓŁY KONTA:
+- Adres e-mail: brittanyrubio@onet.pl
+- Data utworzenia konta: 17 sierpnia 2025
+- Rodzaj konta: Poczta Standard ze zgodami
+
+PROBLEM:
+Włączyłem dostęp IMAP/POP3 w ustawieniach konta (ustawienia.poczta.onet.pl/Konto/KontoGlowne), ale nadal nie mogę się zalogować przez IMAP.
+
+CO ZOSTAŁO SPRAWDZONE:
+✓ Ustawienia IMAP/POP3/SMTP są włączone (przełączniki na "En")
+✓ Logowanie przez poczta.onet.pl działa prawidłowo
+✓ Hasło jest poprawne
+✓ Wypróbowałem różne hasła i metody uwierzytelniania
+✓ Wygenerowałem hasło aplikacji: 791E-TYYO-1V71-ARDT
+✓ Połączenie z serwerem działa (SSL, port 993)
+
+BŁĄD SERWERA:
+"A002 NO [AUTHENTICATIONFAILED] Authentication failed."
+
+DANE TECHNICZNE:
+- Serwer IMAP: imap.poczta.onet.pl
+- Port: 993
+- Bezpieczeństwo: SSL
+- Próbowałem z kilkoma hasłami, wszystkie zwracają błąd uwierzytelniania
+
+PYTANIE:
+Czy moglibyście sprawdzić, dlaczego uwierzytelnianie IMAP nie działa pomimo włączonych ustawień? Czy na moim koncie jest jakieś ograniczenie lub wymaga dodatkowej aktywacji?
+
+Proszę o pomoc w rozwiązaniu tego problemu.
+
+Z poważaniem,
+Brittany Rubio
+brittanyrubio@onet.pl
+
+---
+
+ENGLISH VERSION (if needed):
+============================
+
+TO: poczta@grupaonet.pl
+SUBJECT: Cannot login via IMAP despite enabled settings
+
+Hello,
+
+I have a problem with IMAP access to my email account.
+
+ACCOUNT DETAILS:
+- Email: brittanyrubio@onet.pl
+- Account created: August 17, 2025
+- Account type: Standard Mail with agreements
+
+PROBLEM:
+I enabled IMAP/POP3 access in account settings (ustawienia.poczta.onet.pl/Konto/KontoGlowne), but I still cannot login via IMAP.
+
+WHAT WAS CHECKED:
+✓ IMAP/POP3/SMTP settings are enabled (switches on "En")
+✓ Login via poczta.onet.pl works correctly
+✓ Password is correct
+✓ Tried different passwords and authentication methods
+✓ Generated app password: 791E-TYYO-1V71-ARDT
+✓ Server connection works (SSL, port 993)
+
+SERVER ERROR:
+"A002 NO [AUTHENTICATIONFAILED] Authentication failed."
+
+TECHNICAL DATA:
+- IMAP Server: imap.poczta.onet.pl
+- Port: 993
+- Security: SSL
+- Tried multiple passwords, all return authentication error
+
+QUESTION:
+Could you check why IMAP authentication doesn't work despite enabled settings? Is there any restriction on my account or does it require additional activation?
+
+Please help resolve this issue.
+
+Best regards,
+Brittany Rubio
+brittanyrubio@onet.pl

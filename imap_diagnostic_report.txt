@@ -1,0 +1,122 @@
+ONET.PL IMAP DIAGNOSTIC REPORT
+Generated: November 5, 2025
+================================
+
+ACCOUNT INFORMATION
+-------------------
+Email: brittanyrubio@onet.pl
+Account Created: August 17, 2025
+Password Last Changed: November 5, 2025
+
+IMAP SERVER DETAILS
+-------------------
+Server: imap.poczta.onet.pl
+IP Address: 213.180.147.154
+Port: 993
+Security: SSL/TLS
+Server Capabilities: IMAP4rev1, SASL-IR, LOGIN-REFERRALS, ID, LITERAL+, AUTH=PLAIN, AUTH=LOGIN, AUTH=XOAUTH2
+
+CONNECTION TESTS
+----------------
+✅ DNS Resolution: PASS
+✅ TCP Connection (port 993): PASS
+✅ SSL/TLS Handshake: PASS
+✅ Server Response: OK (Server ready)
+❌ Authentication: FAIL
+
+AUTHENTICATION TESTS PERFORMED
+-------------------------------
+All tests resulted in: [AUTHENTICATIONFAILED] Authentication failed / Login denied
+
+Test 1: Full email + new password
+  User: brittanyrubio@onet.pl
+  Pass: PurpleLemur#420
+  Result: FAIL
+
+Test 2: Full email + old password
+  User: brittanyrubio@onet.pl
+  Pass: dilse@342345
+  Result: FAIL
+
+Test 3: Full email + app password
+  User: brittanyrubio@onet.pl
+  Pass: 791E-TYYO-1V71-ARDT
+  Result: FAIL
+
+Test 4: Username only + new password
+  User: brittanyrubio
+  Pass: PurpleLemur#420
+  Result: FAIL
+
+Test 5: Username only + old password
+  User: brittanyrubio
+  Pass: dilse@342345
+  Result: FAIL
+
+Test 6: URL-encoded special characters
+  User: brittanyrubio@onet.pl
+  Pass: PurpleLemur%23420 (# encoded)
+  Result: FAIL
+
+Test 7: Force LOGIN authentication
+  Auth: --login-options AUTH=LOGIN
+  Result: FAIL
+
+WEBMAIL ACCESS
+--------------
+✅ https://poczta.onet.pl/ - WORKING
+✅ Login successful with: brittanyrubio@onet.pl / PurpleLemur#420
+✅ Emails visible (36 received messages)
+✅ Instagram 2FA emails being received
+
+ACCOUNT SETTINGS VERIFIED
+--------------------------
+✅ App Password Generated: 791E-TYYO-1V71-ARDT (Nov 5, 2025)
+✅ Two-Factor Authentication: DISABLED
+❓ IMAP/POP3 Toggle: User reports ENABLED (verification pending)
+
+POSSIBLE CAUSES
+---------------
+1. IMAP/POP3 not actually enabled (toggle location unclear)
+2. Password propagation delay (changed today)
+3. Account verification required for external access
+4. New account restrictions (< 3 months old)
+5. IP/geographical restrictions
+6. Account type limitation (Standard vs Plus)
+7. Missing account verification step
+
+NEXT STEPS
+----------
+1. Verify IMAP toggle is in correct location and enabled
+2. Check for any unconfirmed verification emails
+3. Wait 24 hours for password propagation
+4. Contact Onet support if still failing
+
+SUPPORT CONTACT
+---------------
+Email: poczta@grupaonet.pl
+Hours: Monday-Friday 8:00-21:00
+Help: https://pomoc.poczta.onet.pl/
+
+ERROR MESSAGES FOR SUPPORT
+---------------------------
+Technical error from server:
+  "A002 NO [AUTHENTICATIONFAILED] Authentication failed."
+
+cURL error:
+  "curl: (67) Login denied"
+
+SERVER TRANSCRIPT
+-----------------
+< * OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID LITERAL+ AUTH=PLAIN AUTH=LOGIN AUTH=XOAUTH2] Onet server ready.
+> A001 CAPABILITY
+< * CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID LITERAL+ AUTH=PLAIN AUTH=LOGIN AUTH=XOAUTH2
+< A001 OK Pre-login capabilities listed, post-login capabilities have more.
+> A002 AUTHENTICATE PLAIN [base64_credentials]
+< A002 NO [AUTHENTICATIONFAILED] Authentication failed.
+
+CONCLUSION
+----------
+Server is reachable and functioning correctly, but ALL authentication attempts fail despite webmail working perfectly. This strongly suggests IMAP/POP3 access is not actually enabled on the account, or requires additional verification/activation steps.
+
+END OF REPORT
